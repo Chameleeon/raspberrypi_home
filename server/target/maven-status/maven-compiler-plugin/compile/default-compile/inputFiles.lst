@@ -1,0 +1,12 @@
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/Main.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/config/CorsConfig.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/config/SecurityConfig.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/controller/AuthController.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/controller/LightController.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/dto/LoginRequest.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/entity/User.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/filter/JwtRequestFilter.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/repositories/UserRepository.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/services/MyUserDetailsService.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/services/UserService.java
+/home/archy/Documents/Programs/RaspPi/raspberrypi_home/server/src/main/java/pi/raspberry/util/JwtUtil.java
