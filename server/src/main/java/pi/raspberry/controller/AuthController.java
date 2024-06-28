@@ -13,7 +13,7 @@ import pi.raspberry.util.JwtUtil;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://172.20.10.2:8081"})
 public class AuthController {
 
   @Autowired
@@ -38,6 +38,11 @@ public class AuthController {
 
     String token = jwtUtil.generateToken(username);
     return ResponseEntity.ok(token);
+  }
+
+  @GetMapping("test")
+  public String test(){
+	  return "Test";
   }
 
   @PostMapping("/register")

@@ -14,7 +14,7 @@ import pi.raspberry.services.GpioService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin
 public class LightController {
   @Autowired
     private GpioService gpioService;
