@@ -15,6 +15,7 @@ cd raspberrypi_home
 
 First you must build the client app:
 ```bash
+cd client
 npm run build
 ```
 
