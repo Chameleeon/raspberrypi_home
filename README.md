@@ -1,5 +1,10 @@
 # Raspberry Pi Home
 
+## Requirements:
+
+* Maven
+* Npm
+
 ## How to run
 
 Run the following commands:
