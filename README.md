@@ -6,6 +6,17 @@
 * Npm
 
 ## How to run
+Clone the repository.
+
+```bash
+git clone https://github.com/Chameleeon/raspberrypi_home.git
+cd raspberrypi_home
+```
+
+First you must build the client app:
+```bash
+npm run build
+```
 
 Run the following commands:
 
