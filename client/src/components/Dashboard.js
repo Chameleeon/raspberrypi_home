@@ -37,7 +37,7 @@ const Dashboard = () => {
   };
 
   const handleToggle = (newMessage) => {
-    setMessage(newMessage);
+    //setMessage(newMessage);
   };
 
   return (

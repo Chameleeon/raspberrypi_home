@@ -71,3 +71,5 @@
  HTTP  04/01/2025 14:21:58 172.20.10.3 Returned 304 in 3 ms
  HTTP  04/01/2025 14:22:00 172.20.10.3 GET /assets/light_on.png
  HTTP  04/01/2025 14:22:00 172.20.10.3 Returned 304 in 5 ms
+
+ INFO  Gracefully shutting down. Please wait...

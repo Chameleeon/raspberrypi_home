@@ -72,16 +72,17 @@ const ToggleButton = ({ lightNumber, token, onToggle }) => {
       onClick={handleClick}
       disabled={loading}
       style={{
-        backgroundColor: '#333',
-        border: '2px solid #222',
+        backgroundColor: '#300b70',
+        border: '6px solid #10072b',
         color: '#fff',
-        fontSize: '80',
+        fontSize: '32px',
+	fontWeight: 'bold',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         cursor: loading ? 'not-allowed' : 'pointer',
         textAlign: 'center',
-        width: '200px',
+        width: '400px',
         transition: 'background-color 0.3s',
         margin: '8px',
       }}
