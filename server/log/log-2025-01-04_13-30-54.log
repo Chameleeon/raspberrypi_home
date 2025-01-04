@@ -1,0 +1,174 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------------< [0;36mpi.raspberry:home[0;1m >--------------------------[m
+[[1;34mINFO[m] [1mBuilding hackathon 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:3.3.0:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mhome[0;1m >>>[m
+[[1;33mWARNING[m] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mhome[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mhome[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 13 source files to /home/archy/raspberrypi_home/server/target/classes
+[[1;33mWARNING[m] /home/archy/raspberrypi_home/server/src/main/java/pi/raspberry/config/SecurityConfig.java: /home/archy/raspberrypi_home/server/src/main/java/pi/raspberry/config/SecurityConfig.java uses or overrides a deprecated API that is marked for removal.
+[[1;33mWARNING[m] /home/archy/raspberrypi_home/server/src/main/java/pi/raspberry/config/SecurityConfig.java: Recompile with -Xlint:removal for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mhome[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/archy/raspberrypi_home/server/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mhome[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:3.3.0:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mhome[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:3.3.0:run[m [1m(default-cli)[m @ [36mhome[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2025-01-04T13:31:15.600+01:00  INFO 3154 --- [           main] pi.raspberry.Main                        : Starting Main using Java 17.0.13 with PID 3154 (/home/archy/raspberrypi_home/server/target/classes started by archy in /home/archy/raspberrypi_home/server)
+2025-01-04T13:31:15.612+01:00  INFO 3154 --- [           main] pi.raspberry.Main                        : No active profile set, falling back to 1 default profile: "default"
+2025-01-04T13:31:17.457+01:00  INFO 3154 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-04T13:31:17.604+01:00  INFO 3154 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2025-01-04T13:31:18.985+01:00  INFO 3154 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-04T13:31:19.014+01:00  INFO 3154 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-04T13:31:19.015+01:00  INFO 3154 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-01-04T13:31:19.159+01:00  INFO 3154 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-04T13:31:19.163+01:00  INFO 3154 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3387 ms
+2025-01-04T13:31:19.501+01:00  INFO 3154 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-04T13:31:19.609+01:00  INFO 3154 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.0.Final
+2025-01-04T13:31:20.004+01:00  WARN 3154 --- [           main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-01-04T13:31:20.267+01:00  INFO 3154 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-04T13:31:20.617+01:00  INFO 3154 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74e497ae
+2025-01-04T13:31:20.622+01:00  INFO 3154 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-04T13:31:20.691+01:00  INFO 3154 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2025-01-04T13:31:20.691+01:00  WARN 3154 --- [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-04T13:31:23.820+01:00  INFO 3154 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-04T13:31:23.841+01:00  INFO 3154 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04T13:31:24.722+01:00  INFO 3154 --- [           main] com.pi4j.Pi4J                            : New auto context
+2025-01-04T13:31:24.723+01:00  INFO 3154 --- [           main] com.pi4j.Pi4J                            : New context builder
+2025-01-04T13:31:24.797+01:00  INFO 3154 --- [           main] c.pi4j.boardinfo.util.BoardInfoHelper    : Detected OS: Name: Linux, version: 6.6.62+rpt-rpi-v8, architecture: aarch64
+2025-01-04T13:31:24.799+01:00  INFO 3154 --- [           main] c.pi4j.boardinfo.util.BoardInfoHelper    : Detected Java: Version: 17.0.13, runtime: 17.0.13+11-Debian-2deb12u1, vendor: Debian, vendor version: null
+2025-01-04T13:31:24.826+01:00  INFO 3154 --- [           main] c.pi4j.boardinfo.util.BoardInfoHelper    : Detected board type MODEL_4_B by code: b03115
+2025-01-04T13:31:24.828+01:00  INFO 3154 --- [           main] com.pi4j.context.impl.DefaultContext     : Detected board model: Raspberry Pi 4 Model B
+2025-01-04T13:31:24.828+01:00  INFO 3154 --- [           main] com.pi4j.context.impl.DefaultContext     : Running on: Name: Linux, version: 6.6.62+rpt-rpi-v8, architecture: aarch64
+2025-01-04T13:31:24.828+01:00  INFO 3154 --- [           main] com.pi4j.context.impl.DefaultContext     : With Java version: Version: 17.0.13, runtime: 17.0.13+11-Debian-2deb12u1, vendor: Debian, vendor version: null
+2025-01-04T13:31:24.829+01:00  INFO 3154 --- [           main] com.pi4j.runtime.impl.DefaultRuntime     : Initializing Pi4J context/runtime...
+2025-01-04T13:31:24.857+01:00  WARN 3154 --- [           main] com.pi4j.runtime.impl.DefaultRuntime     : Replacing provider DIGITAL_OUTPUT RaspberryPi Digital Output (GPIO) Provider with priority 0 with provider GpioD Digital Output (GPIO) Provider with higher priority 150
+2025-01-04T13:31:24.857+01:00  WARN 3154 --- [           main] com.pi4j.runtime.impl.DefaultRuntime     : Replacing provider DIGITAL_INPUT RaspberryPi Digital Input (GPIO) Provider with priority 0 with provider GpioD Digital Input (GPIO) Provider with higher priority 150
+2025-01-04T13:31:24.876+01:00  INFO 3154 --- [           main] c.p.library.gpiod.internal.GpioDContext  : Using chip gpiochip0 pinctrl-bcm2711
+2025-01-04T13:31:24.878+01:00  INFO 3154 --- [           main] c.p.p.impl.DefaultRuntimePlatforms       : adding platform to managed platform map [id=raspberrypi; name=RaspberryPi Platform; priority=5; class=com.pi4j.plugin.raspberrypi.platform.RaspberryPiPlatform]
+2025-01-04T13:31:24.880+01:00  INFO 3154 --- [           main] com.pi4j.runtime.impl.DefaultRuntime     : Pi4J context/runtime successfully initialized.
+java.lang.IllegalStateException: Failed to initialize IO cl1
+	at com.pi4j.registry.impl.DefaultRuntimeRegistry.add(DefaultRuntimeRegistry.java:102)
+	at com.pi4j.registry.impl.DefaultRegistry.add(DefaultRegistry.java:97)
+	at com.pi4j.plugin.gpiod.provider.gpio.digital.GpioDDigitalOutputProviderImpl.create(GpioDDigitalOutputProviderImpl.java:65)
+	at com.pi4j.plugin.gpiod.provider.gpio.digital.GpioDDigitalOutputProviderImpl.create(GpioDDigitalOutputProviderImpl.java:47)
+	at com.pi4j.context.Context.create(Context.java:352)
+	at com.pi4j.internal.IOCreator.create(IOCreator.java:58)
+	at com.pi4j.internal.IOCreator.create(IOCreator.java:96)
+	at pi.raspberry.services.GpioService.<init>(GpioService.java:31)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:111)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at pi.raspberry.Main.main(Main.java:9)
+Caused by: com.pi4j.exception.InitializeException: Failed to initialize output cl1
+	at com.pi4j.plugin.gpiod.provider.gpio.digital.GpioDDigitalOutput.initialize(GpioDDigitalOutput.java:76)
+	at com.pi4j.plugin.gpiod.provider.gpio.digital.GpioDDigitalOutput.initialize(GpioDDigitalOutput.java:46)
+	at com.pi4j.registry.impl.DefaultRuntimeRegistry.add(DefaultRuntimeRegistry.java:95)
+	... 48 more
+Caused by: com.pi4j.library.gpiod.internal.GpioDException: c_gpiod_line_request_output failed: -1 (Device or resource busy)
+	at com.pi4j.library.gpiod.internal.GpioD.lineRequestOutput(GpioD.java:156)
+	at com.pi4j.library.gpiod.internal.GpioLine.requestOutput(GpioLine.java:70)
+	at com.pi4j.plugin.gpiod.provider.gpio.digital.GpioDDigitalOutput.initialize(GpioDDigitalOutput.java:74)
+	... 50 more
+2025-01-04T13:31:25.058+01:00  WARN 3154 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-04T13:31:25.130+01:00  INFO 3154 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-01-04T13:31:27.699+01:00  WARN 3154 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-01-04T13:31:27.703+01:00  INFO 3154 --- [           main] com.pi4j.runtime.impl.DefaultRuntime     : Shutting down Pi4J context/runtime...
+2025-01-04T13:31:27.709+01:00  INFO 3154 --- [           main] com.pi4j.util.ExecutorPool               : Shutting down executor pool Pi4J.RUNTIME
+2025-01-04T13:31:27.710+01:00  INFO 3154 --- [           main] com.pi4j.runtime.impl.DefaultRuntime     : Pi4J context/runtime successfully shutdown. Dispatching shutdown event.
+2025-01-04T13:31:27.712+01:00  INFO 3154 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04T13:31:27.716+01:00  INFO 3154 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-04T13:31:27.737+01:00  INFO 3154 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-04T13:31:27.770+01:00  INFO 3154 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-04T13:31:27.815+01:00 ERROR 3154 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  29.005 s
+[[1;34mINFO[m] Finished at: 2025-01-04T13:31:27+01:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.springframework.boot:spring-boot-maven-plugin:3.3.0:run[m [1m(default-cli)[m on project [36mhome[m: [1;31mProcess terminated with exit code: 1[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[0m[0m

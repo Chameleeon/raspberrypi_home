@@ -13,6 +13,7 @@ const ToggleButton = ({ lightNumber, token, onToggle }) => {
       onToggle('Unauthorized access');
       return;
     }
+	console.log(`${process.env.PUBLIC_URL}/assets/${lightStatus ? 'light_on.jpg' : 'light_off.jpg'}`);
 
     try {
       const response = await fetch(lightNumber === 1 ? apiUrl1 : apiUrl2, {
@@ -69,12 +70,15 @@ const ToggleButton = ({ lightNumber, token, onToggle }) => {
   return (
     <button onClick={handleClick} disabled={loading}>
       {/* Conditionally render images based on the light status */}
-      <img
-        src={`${process.env.PUBLIC_URL}/assets/${lightStatus ? 'light_on.png' : 'light_off.png'}`}
+      <img src={`${process.env.PUBLIC_URL}/assets/${lightStatus ? 'light_on.png' : 'light_off.png'}`}
         alt={`Light ${lightNumber}`}
-        style={{ width: '20px', height: '20px', marginRight: '8px' }}
+        style={{ width: '100px', height: '100', marginRight: '8px' }}
       />
-      {loading ? ' Toggling...' : ` Toggle Light ${lightNumber}`}
+	  {loading
+		      ? ' Toggling...'
+		      : lightNumber === 1
+		      ? ' Toggle Lights'
+		      : ' Toggle LED Strip'}
     </button>
   );
 };

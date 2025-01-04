@@ -19,5 +19,5 @@ echo "React app is being served with PID $SERVE_PID."
 
 # Optionally provide commands to manage the process
 echo "Use the following commands to manage the app:"
-echo "  - View logs: tail -f $L
+echo "  - View logs: tail -f $L"
 

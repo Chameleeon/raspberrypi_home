@@ -26,7 +26,6 @@ const Dashboard = () => {
       });
       if (response.ok) {
         const data = await response.text();
-        setMessage(data);
       } else {
         setMessage('Failed to fetch light status');
       }
