@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import ToggleButton from './ToggleButton';
 import config from '../config';
 
 const Dashboard = () => {
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const token = localStorage.getItem('token');
-
-  const apiUrl1 = `http://${config.server.ip}:${config.server.port}/api/l1`;
-  const apiUrl2 = `http://${config.server.ip}:${config.server.port}/api/l2`;
 
   useEffect(() => {
     if (!token) {
@@ -20,7 +18,7 @@ const Dashboard = () => {
   const fetchLightStatus = async () => {
     setLoading(true);
     try {
-      const response = await fetch(apiUrl1, {
+      const response = await fetch(`http://${config.server.ip}:${config.server.port}/api/l1`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -39,31 +37,8 @@ const Dashboard = () => {
     }
   };
 
-  const handleToggleButtonClick = async (lightNumber) => {
-    if (!token) {
-      setMessage('Unauthorized access');
-      return;
-    }
-
-    setLoading(true);
-    try {
-      const response = await fetch(lightNumber === 1 ? apiUrl1 + '/toggle' : apiUrl2 + '/toggle', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${token}`
-        }
-      });
-      if (response.ok) {
-        const data = await response.text();
-        setMessage(data);
-      } else {
-        setMessage('Failed to toggle light');
-      }
-    } catch (error) {
-      setMessage('An error occurred while toggling the light');
-    } finally {
-      setLoading(false);
-    }
+  const handleToggle = (newMessage) => {
+    setMessage(newMessage);
   };
 
   return (
@@ -74,12 +49,8 @@ const Dashboard = () => {
         <p>Loading...</p>
       ) : (
         <div>
-          <button onClick={() => handleToggleButtonClick(1)}>
-            <i className="fas fa-lightbulb"></i> Toggle Light 1
-          </button>
-          <button onClick={() => handleToggleButtonClick(2)}>
-            <i className="fas fa-lightbulb"></i> Toggle Light 2
-          </button>
+          <ToggleButton lightNumber={1} token={token} onToggle={handleToggle} />
+          <ToggleButton lightNumber={2} token={token} onToggle={handleToggle} />
         </div>
       )}
     </div>
@@ -87,4 +58,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
