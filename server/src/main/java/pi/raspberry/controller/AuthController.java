@@ -13,7 +13,7 @@ import pi.raspberry.util.JwtUtil;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = {"http://172.20.10.2:8081"})
+@CrossOrigin
 public class AuthController {
 
   @Autowired

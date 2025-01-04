@@ -17,9 +17,11 @@ import pi.raspberry.services.GpioService;
 @CrossOrigin
 public class LightController {
   @Autowired
-    private GpioService gpioService;
+  private GpioService gpioService;
 
   private boolean light1Status = false;
+  private boolean light2Status = false;
+
   @GetMapping("/l1")
   public ResponseEntity<String> getLight1Status() {
     if (SecurityContextHolder.getContext().getAuthentication() != null &&
@@ -36,11 +38,36 @@ public class LightController {
     if (SecurityContextHolder.getContext().getAuthentication() != null &&
         SecurityContextHolder.getContext().getAuthentication().isAuthenticated()) {
 
-      gpioService.toggleLed();
+      gpioService.toggleLed(23); // Control Light 1 on pin 23
       light1Status = !light1Status;
       return ResponseEntity.ok("Light 1 is now " + (light1Status ? "ON" : "OFF"));
     } else {
       return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized");
     }
   }
+
+  @GetMapping("/l2")
+  public ResponseEntity<String> getLight2Status() {
+    if (SecurityContextHolder.getContext().getAuthentication() != null &&
+        SecurityContextHolder.getContext().getAuthentication().isAuthenticated()) {
+
+      return ResponseEntity.ok("Light 2 is " + (light2Status ? "ON" : "OFF"));
+    } else {
+      return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized");
+    }
+  }
+
+  @PostMapping("/l2/toggle")
+  public ResponseEntity<String> toggleLight2Status() {
+    if (SecurityContextHolder.getContext().getAuthentication() != null &&
+        SecurityContextHolder.getContext().getAuthentication().isAuthenticated()) {
+
+      gpioService.toggleLed(24); // Control Light 2 on pin 24
+      light2Status = !light2Status;
+      return ResponseEntity.ok("Light 2 is now " + (light2Status ? "ON" : "OFF"));
+    } else {
+      return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized");
+    }
+  }
 }
+
