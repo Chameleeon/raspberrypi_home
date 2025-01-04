@@ -1,0 +1,7 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------------< [0;36mpi.raspberry:home[0;1m >--------------------------[m
+[[1;34mINFO[m] [1mBuilding hackathon 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:3.3.0:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mhome[0;1m >>>[m

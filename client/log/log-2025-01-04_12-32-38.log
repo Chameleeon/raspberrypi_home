@@ -1,0 +1,13 @@
+ INFO  Accepting connections at http://localhost:3000
+ HTTP  04/01/2025 12:32:44 172.20.10.3 GET /dashboard
+ HTTP  04/01/2025 12:32:44 172.20.10.3 Returned 200 in 95 ms
+ HTTP  04/01/2025 12:32:44 172.20.10.3 GET /static/js/main.c8253d2d.js
+ HTTP  04/01/2025 12:32:44 172.20.10.3 GET /static/css/main.a1dbd6c3.css
+ HTTP  04/01/2025 12:32:44 172.20.10.3 Returned 200 in 10 ms
+ HTTP  04/01/2025 12:32:44 172.20.10.3 Returned 304 in 17 ms
+ HTTP  04/01/2025 12:32:44 172.20.10.3 GET /favicon.ico
+ HTTP  04/01/2025 12:32:44 172.20.10.3 Returned 200 in 10 ms
+ HTTP  04/01/2025 12:32:44 172.20.10.3 GET /logo192.png
+ HTTP  04/01/2025 12:32:44 172.20.10.3 Returned 304 in 15 ms
+
+ INFO  Gracefully shutting down. Please wait...
