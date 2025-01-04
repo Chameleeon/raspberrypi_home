@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import config from '../config'; // Assuming you have the config file
+import config from '../config';
 
 const ToggleButton = ({ lightNumber, token, onToggle }) => {
   const [loading, setLoading] = useState(false);
-  const [lightStatus, setLightStatus] = useState(false); // Track light status
+  const [lightStatus, setLightStatus] = useState(false);
   const apiUrl1 = `http://${config.server.ip}:${config.server.port}/api/l1`;
   const apiUrl2 = `http://${config.server.ip}:${config.server.port}/api/l2`;
 
-  // Function to fetch the light status from the backend
+
   const fetchLightStatus = async () => {
     if (!token) {
       onToggle('Unauthorized access');
       return;
     }
-	console.log(`${process.env.PUBLIC_URL}/assets/${lightStatus ? 'light_on.jpg' : 'light_off.jpg'}`);
+    console.log(`${process.env.PUBLIC_URL}/assets/${lightStatus ? 'light_on.jpg' : 'light_off.jpg'}`);
 
     try {
       const response = await fetch(lightNumber === 1 ? apiUrl1 : apiUrl2, {
@@ -68,17 +68,34 @@ const ToggleButton = ({ lightNumber, token, onToggle }) => {
   };
 
   return (
-    <button onClick={handleClick} disabled={loading}>
+    <button
+      onClick={handleClick}
+      disabled={loading}
+      style={{
+        backgroundColor: '#333',
+        border: '2px solid #222',
+        color: '#fff',
+        fontSize: '36',
+        padding: '12px 20px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        cursor: loading ? 'not-allowed' : 'pointer',
+        textAlign: 'center',
+        transition: 'background-color 0.3s',
+      }}
+    >
       {/* Conditionally render images based on the light status */}
-      <img src={`${process.env.PUBLIC_URL}/assets/${lightStatus ? 'light_on.png' : 'light_off.png'}`}
+      <img
+        src={`${process.env.PUBLIC_URL}/assets/${lightStatus ? 'light_on.png' : 'light_off.png'}`}
         alt={`Light ${lightNumber}`}
-        style={{ width: '100px', height: '100', marginRight: '8px' }}
+        style={{ width: '30px', height: '30px', marginRight: '8px' }}
       />
-	  {loading
-		      ? ' Toggling...'
-		      : lightNumber === 1
-		      ? ' Toggle Lights'
-		      : ' Toggle LED Strip'}
+      {loading
+        ? ' Toggling...'
+        : lightNumber === 1
+          ? ' Lights'
+          : ' LED Strip'}
     </button>
   );
 };
