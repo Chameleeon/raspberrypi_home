@@ -75,21 +75,22 @@ const ToggleButton = ({ lightNumber, token, onToggle }) => {
         backgroundColor: '#333',
         border: '2px solid #222',
         color: '#fff',
-        fontSize: '36',
-        padding: '12px 20px',
+        fontSize: '80',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         cursor: loading ? 'not-allowed' : 'pointer',
         textAlign: 'center',
+        width: '200px',
         transition: 'background-color 0.3s',
+        margin: '8px',
       }}
     >
       {/* Conditionally render images based on the light status */}
       <img
         src={`${process.env.PUBLIC_URL}/assets/${lightStatus ? 'light_on.png' : 'light_off.png'}`}
         alt={`Light ${lightNumber}`}
-        style={{ width: '30px', height: '30px', marginRight: '8px' }}
+        style={{ width: '100', height: '100', marginRight: '8px' }}
       />
       {loading
         ? ' Toggling...'

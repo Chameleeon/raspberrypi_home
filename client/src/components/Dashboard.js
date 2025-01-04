@@ -47,7 +47,7 @@ const Dashboard = () => {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <div>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap' }}>
           <ToggleButton lightNumber={1} token={token} onToggle={handleToggle} />
           <ToggleButton lightNumber={2} token={token} onToggle={handleToggle} />
         </div>
