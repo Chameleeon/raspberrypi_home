@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 const ToggleButton = ({ lightNumber, token, onToggle }) => {
   const [loading, setLoading] = useState(false);
-  const apiUrl1 = `http://your-server-ip:port/api/l1`;
-  const apiUrl2 = `http://your-server-ip:port/api/l2`;
+  const apiUrl1 = `http://${config.server.ip}:${config.server.port}/api/l1`;
+  const apiUrl2 = `http://${config.server.ip}:${config.server.port}/api/l2`;
 
   const handleClick = async () => {
     if (!token) {

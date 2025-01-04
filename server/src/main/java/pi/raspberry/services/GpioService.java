@@ -18,26 +18,26 @@ public class GpioService {
     public GpioService(Context pi4j) {
         output23 = null;
         output24 = null;
-
+        
         try {
             // Configure pin 23 (Ceiling Light 1)
             DigitalOutputConfig config23 = DigitalOutput.newConfigBuilder(pi4j)
-                    .id("cl1")
-                    .name("Ceiling Light 1")
-                    .address(23)
-                    .shutdown(DigitalState.HIGH)
-                    .initial(DigitalState.HIGH)
-                    .build();
+                .id("cl1")
+                .name("Ceiling Light 1")
+                .address(23)
+                .shutdown(DigitalState.LOW)
+                .initial(DigitalState.HIGH)
+                .build();
             output23 = pi4j.create(config23);
 
             // Configure pin 24 (Ceiling Light 2)
             DigitalOutputConfig config24 = DigitalOutput.newConfigBuilder(pi4j)
-                    .id("cl2")
-                    .name("Ceiling Light 2")
-                    .address(24)
-                    .shutdown(DigitalState.HIGH)
-                    .initial(DigitalState.HIGH)
-                    .build();
+                .id("cl2")
+                .name("Ceiling Light 2")
+                .address(24)
+                .shutdown(DigitalState.LOW)
+                .initial(DigitalState.HIGH)
+                .build();
             output24 = pi4j.create(config24);
         } catch (Exception e) {
             e.printStackTrace();
@@ -66,3 +66,4 @@ public class GpioService {
         }
     }
 }
+
